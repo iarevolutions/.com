@@ -34,22 +34,34 @@
     .center {
       text-align: center; /* centra el contenido del elemento */
     }
+    
+    /* Estilos específicos para dispositivos móviles */
+    @media only screen and (max-width: 600px) {
+      /* Ajuste del tamaño de la imagen */
+      .product-image {
+        width: 100%; /* La imagen ocupará todo el ancho del contenedor */
+        height: auto; /* Altura automática para mantener la proporción */
+      }
+      
+      /* Ajuste del tamaño del botón de compra */
+      .purchase-btn {
+        width: 100%; /* El botón ocupará todo el ancho disponible */
+        font-size: 18px; /* Tamaño de fuente más pequeño para dispositivos móviles */
+      }
+    }
   </style>
 </head>
 <body>
   <!-- Encabezado -->
   <header>
-
-    <!--- <img src="imagenes/logo.png" alt="Logo" class="logo">---->
-
-     <!-- Texto Persuasivo -->
-  <section id="persuasive-text">
-    <div class="persuasive-content">
+    <!-- Texto Persuasivo -->
+    <section id="persuasive-text">
+      <div class="persuasive-content">
         <h1 style="color: white;">Inteligencia Artificial para Creadores de Contenido</h1>
-    <h2 style="color: white;">CREA DISEÑOS ASOMBROSOS CON IA</h2>
-      <h2 style="color: #ff0e5e; font-size: 28px;">¡Desbloquea tu Creatividad con Inteligencia Artificial!</h2>
-    </div>
-  </section>
+        <h2 style="color: white;">CREA DISEÑOS ASOMBROSOS CON IA</h2>
+        <h2 style="color: #ff0e5e; font-size: 28px;">¡Desbloquea tu Creatividad con Inteligencia Artificial!</h2>
+      </div>
+    </section>
   </header>
   
   <!-- Sección de Video -->
@@ -58,104 +70,57 @@
     <h2>Tu próximo nivel de creatividad comienza aquí. ¡Adquiérelo ya!</h2>
   </section>
   
-  <!-- Sección de Imagen -->
-  <section id="image">
-    <img src="imagenes/texto2.png" alt="Producto" class="product-image" style="width: 1000px; height: 400px;">
-  </section><br><br><br>
-
-  <!-- Sección de Imagen -->
-  <section id="image">
-    <img src="imagenes/texto.png" alt="Producto" class="product-image" style="width: 1000px; height: 400px;">
-  </section><br><br><br>
-
-  <!-- Sección de Imagen -->
-  <section id="image">
-    <img src="imagenes/generacion img.png" alt="Producto" class="product-image" style="width: 1000px; height: 400px;">
-  </section><br><br><br>
-
-  <!-- Sección de Imagen -->
-  <section id="image">
-    <img src="imagenes/generacion vd.png" alt="Producto" class="product-image" style="width: 1000px; height: 400px;">
-  </section><br><br><br>
-
-  <!-- Sección de Imagen -->
-  <section id="image">
-    <img src="imagenes/proyecto.png" alt="Producto" class="product-image" style="width: 1000px; height: 400px;">
-  </section><br><br><br>
-
-  <!-- Sección de Imagen -->
-  <section id="image">
-    <img src="imagenes/redes.png" alt="Producto" class="product-image" style="width: 1000px; height: 400px;">
-  </section><br><br><br>
-
-  <!-- Sección de Imagen de certificado -->
-  <section id="image">
-    <img src="imagenes/certificado.png" alt="Producto" class="product-image" style="width: 1000px; height: 400px;">
+  <!-- Secciones de Imagen -->
+  <section class="image-section">
+    <img src="imagenes/texto2.png" alt="Producto" class="product-image">
+  </section>
+  <section class="image-section">
+    <img src="imagenes/texto.png" alt="Producto" class="product-image">
+  </section>
+  <section class="image-section">
+    <img src="imagenes/generacion img.png" alt="Producto" class="product-image">
+  </section>
+  <section class="image-section">
+    <img src="imagenes/generacion vd.png" alt="Producto" class="product-image">
+  </section>
+  <section class="image-section">
+    <img src="imagenes/proyecto.png" alt="Producto" class="product-image">
+  </section>
+  <section class="image-section">
+    <img src="imagenes/redes.png" alt="Producto" class="product-image">
+  </section>
+  <section class="image-section">
+    <img src="imagenes/certificado.png" alt="Producto" class="product-image">
+  </section>
+  <section class="image-section">
+    <img src="imagenes/bonus 1.png" alt="Producto" class="product-image">
+  </section>
+  <section class="image-section">
+    <img src="imagenes/bonus2.png" alt="Producto" class="product-image">
+  </section>
+  <section class="image-section">
+    <img src="imagenes/bonus3.png" alt="Producto" class="product-image">
+  </section>
+  <section class="image-section">
+    <img src="imagenes/bonus4.png" alt="Producto" class="product-image">
+  </section>
+  <section class="image-section">
+    <img src="imagenes/cupon.jpg" alt="Producto" class="product-image">
   </section>
 
   <!-- Botón de Compra -->
-  <center>
-    <div class="center">
-      <button class="purchase-btn" onclick="redirectToPage('https://bit.ly/3SU7buj')">Quiero Acceder al Curso</button>
-    </div>
-  </center><br><br>
-
-  <!-- Sección de Imagen -->
-  <section id="image">
-    <img src="imagenes/bonus 1.png" alt="Producto" class="product-image" style="width: 1000px; height: 400px;">
-  </section><br><br><br>
-
-  <!-- Sección de Imagen -->
-  <section id="image">
-    <img src="imagenes/bonus2.png" alt="Producto" class="product-image" style="width: 1000px; height: 400px;">
-  </section><br><br><br>
-
-  <!-- Sección de Imagen -->
-  <section id="image">
-    <img src="imagenes/bonus3.png" alt="Producto" class="product-image" style="width: 1000px; height: 400px;">
-  </section><br><br><br>
-
-  <!-- Sección de Imagen -->
-  <section id="image">
-    <img src="imagenes/bonus4.png" alt="Producto" class="product-image" style="width: 1000px; height: 400px;">
-  </section><br><br><br>
-
-  <!-- Sección de Precio -->
-  <section id="price">
-    <center><h2></h2></center>
-    <center>
-      <del style="color: #EE1212 ; font-size: 20px;"><b><span>VALOR TOTAL USD</span> <span style="color: red;">150</span></b></del>
-      
-      <center><h2>Precio Especial:</h2></center>
-      <span class="yellow-text"><b>USD 49</b></span><br><br>
-      <span style="color: #15f800 ; font-size: 35px;"><b>Usando el CUPÓN DE DESCUENTO:<span style="color: #f4f800 ; font-size: 35px;"><b>OFERTA49</b> <br><br>
-        Por Tiempo limitado</b>
-    </center>
-  </section>
+  <div class="center">
+    <button class="purchase-btn" onclick="redirectToPage('https://bit.ly/3SU7buj')">Quiero Acceder al Curso</button>
+  </div>
   
-  <!-- Sección de Imagen -->
-  <section id="image">
-    <img src="imagenes/cupon.jpg" alt="Producto" class="product-image" style="width: 1000px; height: 400px;">
-  </section>
-  <br>
-  <center>
-</div><br><br>
-
-<!-- Botón de Compra (Testimonios) -->
-<button class="purchase-btn" onclick="redirectToPage('https://bit.ly/3SU7buj')">Quiero Acceder al Curso</button>
-</center>
-  
-
-  <!-- Sección de Testimonios -->
+  <!-- Testimonios -->
   <section id="testimonials">
     <h2>Testimonios</h2>
     <div class="testimonials">
       <img src="imagenes/testimonio1.jpeg" alt="Testimonio 1" class="testimonial-img" onclick="openModal('imagenes/testimonio1.jpeg')">
       <img src="imagenes/testimonio2.jpeg" alt="Testimonio 2" class="testimonial-img" onclick="openModal('imagenes/testimonio2.jpeg')">
     </div>
-   
   </section>
-  
   
   <script src="script.js"></script>
   <script>
