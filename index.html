@@ -6,122 +6,105 @@
   <title>Landing Page</title>
   <link rel="stylesheet" href="styles.css">
   <style>
-    header {
-      background-color: black;
-    }
-    #price {
-      color: #54EE12 ;
-    }
-    #price span {
-      color: red;
-    }
-    /* Añade este estilo para cambiar el color a amarillo */
-    #price .yellow-text {
-      color: yellow !important;
-    }
-    /* Estilos para el botón de compra */
-    .purchase-btn {
-      width: 350px; /* ajusta el ancho según sea necesario */
-      height: 65px; /* ajusta la altura según sea necesario */
-      font-size: 24px; /* ajusta el tamaño de fuente según sea necesario */
-      background-color: #ff0000; /* color de fondo del botón */
-      color: white; /* color de texto del botón */
-      border: none; /* elimina el borde del botón */
-      border-radius: 10px; /* añade bordes redondeados al botón */
-      cursor: pointer; /* cambia el cursor al pasar sobre el botón */
-    }
-    /* Estilo para centrar el botón */
-    .center {
-      text-align: center; /* centra el contenido del elemento */
+    /* Estilos generales para el cuerpo del documento */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
     }
     
-    /* Estilos específicos para dispositivos móviles */
-    @media only screen and (max-width: 600px) {
-      /* Ajuste del tamaño de la imagen */
-      .product-image {
-        width: 100%; /* La imagen ocupará todo el ancho del contenedor */
-        height: auto; /* Altura automática para mantener la proporción */
-      }
-      
-      /* Ajuste del tamaño del botón de compra */
-      .purchase-btn {
-        width: 100%; /* El botón ocupará todo el ancho disponible */
-        font-size: 18px; /* Tamaño de fuente más pequeño para dispositivos móviles */
-      }
+    /* Estilos para el contenedor principal */
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* Estilos para el encabezado */
+    header {
+      background-color: black;
+      text-align: center;
+      padding: 20px 0;
+      color: white;
+      width: 100%;
+    }
+
+    /* Estilos para el texto persuasivo */
+    #persuasive-text {
+      margin-bottom: 20px;
+    }
+
+    /* Estilos para las secciones */
+    section {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    /* Estilos para las imágenes */
+    .product-image {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* Estilos para el botón de compra */
+    .purchase-btn {
+      width: 350px;
+      height: 65px;
+      font-size: 24px;
+      background-color: #ff0000;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    /* Estilos para los testimonios */
+    #testimonials {
+      margin-top: 20px;
     }
   </style>
 </head>
 <body>
-  <!-- Encabezado -->
-  <header>
-    <!-- Texto Persuasivo -->
-    <section id="persuasive-text">
-      <div class="persuasive-content">
-        <h1 style="color: white;">Inteligencia Artificial para Creadores de Contenido</h1>
-        <h2 style="color: white;">CREA DISEÑOS ASOMBROSOS CON IA</h2>
-        <h2 style="color: #ff0e5e; font-size: 28px;">¡Desbloquea tu Creatividad con Inteligencia Artificial!</h2>
+  <!-- Contenedor principal -->
+  <div class="container">
+    <!-- Encabezado -->
+    <header>
+      <!-- Texto Persuasivo -->
+      <section id="persuasive-text">
+        <div class="persuasive-content">
+          <h1>Inteligencia Artificial para Creadores de Contenido</h1>
+          <h2>CREA DISEÑOS ASOMBROSOS CON IA</h2>
+          <h2 style="color: #ff0e5e; font-size: 28px;">¡Desbloquea tu Creatividad con Inteligencia Artificial!</h2>
+        </div>
+      </section>
+    </header>
+    
+    <!-- Sección de Video -->
+    <section id="video">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/eg058F9moDQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <h2>Tu próximo nivel de creatividad comienza aquí. ¡Adquiérelo ya!</h2>
+    </section>
+    
+    <!-- Secciones de Imagen -->
+    <section class="image-section">
+      <img src="imagenes/texto2.png" alt="Producto" class="product-image">
+    </section>
+    <!-- Repite lo mismo para las demás secciones de imágenes -->
+
+    <!-- Botón de Compra -->
+    <button class="purchase-btn" onclick="redirectToPage('https://bit.ly/3SU7buj')">Quiero Acceder al Curso</button>
+
+    <!-- Sección de Testimonios -->
+    <section id="testimonials">
+      <h2>Testimonios</h2>
+      <div class="testimonials">
+        <img src="imagenes/testimonio1.jpeg" alt="Testimonio 1" class="testimonial-img" onclick="openModal('imagenes/testimonio1.jpeg')">
+        <img src="imagenes/testimonio2.jpeg" alt="Testimonio 2" class="testimonial-img" onclick="openModal('imagenes/testimonio2.jpeg')">
       </div>
     </section>
-  </header>
-  
-  <!-- Sección de Video -->
-  <section id="video">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/eg058F9moDQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <h2>Tu próximo nivel de creatividad comienza aquí. ¡Adquiérelo ya!</h2>
-  </section>
-  
-  <!-- Secciones de Imagen -->
-  <section class="image-section">
-    <img src="imagenes/texto2.png" alt="Producto" class="product-image">
-  </section>
-  <section class="image-section">
-    <img src="imagenes/texto.png" alt="Producto" class="product-image">
-  </section>
-  <section class="image-section">
-    <img src="imagenes/generacion img.png" alt="Producto" class="product-image">
-  </section>
-  <section class="image-section">
-    <img src="imagenes/generacion vd.png" alt="Producto" class="product-image">
-  </section>
-  <section class="image-section">
-    <img src="imagenes/proyecto.png" alt="Producto" class="product-image">
-  </section>
-  <section class="image-section">
-    <img src="imagenes/redes.png" alt="Producto" class="product-image">
-  </section>
-  <section class="image-section">
-    <img src="imagenes/certificado.png" alt="Producto" class="product-image">
-  </section>
-  <section class="image-section">
-    <img src="imagenes/bonus 1.png" alt="Producto" class="product-image">
-  </section>
-  <section class="image-section">
-    <img src="imagenes/bonus2.png" alt="Producto" class="product-image">
-  </section>
-  <section class="image-section">
-    <img src="imagenes/bonus3.png" alt="Producto" class="product-image">
-  </section>
-  <section class="image-section">
-    <img src="imagenes/bonus4.png" alt="Producto" class="product-image">
-  </section>
-  <section class="image-section">
-    <img src="imagenes/cupon.jpg" alt="Producto" class="product-image">
-  </section>
+  </div><!-- Cierre del contenedor principal -->
 
-  <!-- Botón de Compra -->
-  <div class="center">
-    <button class="purchase-btn" onclick="redirectToPage('https://bit.ly/3SU7buj')">Quiero Acceder al Curso</button>
-  </div>
-  
-  <!-- Testimonios -->
-  <section id="testimonials">
-    <h2>Testimonios</h2>
-    <div class="testimonials">
-      <img src="imagenes/testimonio1.jpeg" alt="Testimonio 1" class="testimonial-img" onclick="openModal('imagenes/testimonio1.jpeg')">
-      <img src="imagenes/testimonio2.jpeg" alt="Testimonio 2" class="testimonial-img" onclick="openModal('imagenes/testimonio2.jpeg')">
-    </div>
-  </section>
-  
   <script src="script.js"></script>
   <script>
     // Función para redirigir a una página
