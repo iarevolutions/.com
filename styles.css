@@ -1,0 +1,246 @@
+/* Estilos generales */
+/* Define los estilos generales para el cuerpo del documento */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black; /* Cambia el color de fondo a negro */
+    color: #fff; /* Establece el color del texto en blanco */
+}
+
+/* Encabezado */
+/* Estilos para el encabezado */
+header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #f2f2f2;
+    margin-bottom: 10px; /* Añade margen inferior */
+    color: black; /* Establece el color del texto en negro */
+}
+
+/* Imagen del logo en el encabezado */
+/* Define el tamaño de la imagen del logo en el encabezado */
+header img {
+    width: 100px;
+}
+
+/* Título principal */
+/* Estilos para el título principal */
+h1 {
+    margin: 5px 0; /* Reduce los márgenes del título */
+    color: black; /* Establece el color del texto en negro */
+}
+
+/* Secciones */
+/* Estilos para las secciones */
+section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+/* Temporizador */
+/* Estilos para el temporizador */
+.countdown {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    color: black; /* Establece el color del texto en negro */
+}
+
+/* Contenedor de elementos del temporizador */
+/* Define el tamaño y el margen para los elementos del temporizador */
+span {
+    font-size: 2em;
+    margin: 0 10px;
+}
+
+/* Botón de compra */
+/* Estilos para el botón de compra */
+.purchase-btn {
+    background-color: #8a2be2;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    animation: float 3s ease-in-out infinite; /* Aplica la animación de flotación */
+}
+
+/* Cambio de estilo al pasar el mouse sobre el botón de compra */
+.purchase-btn:hover {
+    transform: translateY(-5px);
+}
+
+/* Precio */
+/* Estilos para el precio */
+.price {
+    margin-top: 20px;
+    font-size: 2em;
+}
+
+/* Testimonios */
+/* Estilos para la sección de testimonios */
+.testimonials {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Imágenes de testimonios */
+/* Define el tamaño y el margen para las imágenes de los testimonios */
+.testimonials img {
+    width: 200px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+/* Video */
+/* Estilos para el elemento de video */
+#video video {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Estilos responsivos */
+/* Define estilos responsivos para pantallas más pequeñas */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    .price {
+        font-size: 1.5em;
+    }
+
+    #video video {
+        width: 100%;
+    }
+}
+
+/* Imagen del producto */
+/* Estilos para la imagen del producto */
+.product-image {
+    width: 30%; /* Cambia el tamaño según sea necesario */
+    margin: 10px auto; /* Centra la imagen */
+}
+
+/* Logo */
+/* Estilos para el logo */
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    width: 80px; /* Cambia el tamaño del logo según sea necesario */
+}
+
+/* Modal */
+/* Estilos para el modal */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contenido del modal */
+/* Define el tamaño máximo del contenido del modal */
+.modal-content {
+    max-width: 80%;
+    max-height: 80%;
+}
+
+/* Imagen de testimonio */
+/* Estilos para la imagen de testimonio */
+.testimonial-img {
+    width: 200px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+/* Distancia */
+/* Estilos para el encabezado */
+header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #f2f2f2;
+    margin-bottom: 10px; /* Reduce el margen inferior del encabezado */
+    color: black; /* Establece el color del texto en negro */
+}
+
+/* Estilos para el título principal */
+h1 {
+    margin: 5px 0; /* Reduce los márgenes del título */
+    color: black; /* Establece el color del texto en negro */
+}
+
+/* Oferta */
+/* Estilos para la sección de oferta */
+#offer {
+    padding: 20px 0; /* Reduce el espaciado interno de la sección de oferta */
+    margin-bottom: 10px; /* Reduce el margen inferior de la sección de oferta */
+}
+
+/* Animación flotante */
+/* Define la animación de flotación */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Estilos para el temporizador */
+/* Estilos para la sección de temporizador */
+.countdown {
+    display: flex;
+    justify-content: center;
+    color: black; /* Establece el color del texto en negro */
+}
+
+/* Estilos para los elementos del temporizador */
+.countdown span {
+    display: inline-block;
+    margin: 0 5px;
+    font-size: 1.5em;
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Estilos para el temporizador */
+.countdown {
+    display: flex;
+    justify-content: center;
+    color: black; /* Establece el color del texto en negro */
+}
+
+
+
+
+/* Estilos para los elementos del temporizador */
+.countdown span {
+    display: inline-block;
+    margin: 0 5px;
+    font-size: 1.5em;
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #8a2be2;
+    color: #030303; /* Color del texto en blanco */
+}
+
+
+/* Secciones */
+/* Estilos para las secciones */
+section {
+    padding: 10px 0; /* Reducir el padding a 20px arriba y abajo, sin padding a los lados */
+}
